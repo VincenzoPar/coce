@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .background {
+            background-color: #108337;
+        }
+        .slide-in {
+            position: relative;
+            left: -100%;
+            animation: slideIn 0.7s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            to {
+                left: 0;
+            }
+        }
+
+        .slide-right {
+            position: relative;
+            right: -100%;
+            animation: slideFromRight 1.0s ease-out forwards;
+        }
+
+        @keyframes slideFromRight {
+            to {
+                right: 0;
+            }
+        }
+
+        .carosello {
+            opacity: 0;
+            transform: translateY(50px); /* Opzionale per un effetto di slide-up */
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        /* Quando il carosello è visibile, fai apparire con l'animazione */
+        .carosello.visibile {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid background">
+        <div class="container" style="background-color: #175640;">
+            <div class="row text-center pt-5">
+                <div class="col">
+                    <img 
+                        src="assets/logo-coce-pizzeria_2025-02-14_0830/LOGO COCE PIZZERIA/LOGO COCE COMPLETO SVG/LOGO COCE COMPLETO.svg" 
+                        class="w-50 h-auto bg-transparent border-0 slide-in"
+                        id="logogramma"
+                        alt="LogoCoce">
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <img 
+                        src="assets/logo-coce-pizzeria_2025-02-14_0830/LOGO COCE PIZZERIA/MNCF.png" 
+                        class="bg-transparent border-0 slide-right mt-2"
+                        id="logogramma"
+                        alt="LogoCoce">
+                </div>
+            </div>
+            <div class="row text-center p-5">
+                <div id="carouselExampleAutoplaying" class="carousel slide carosello" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/img/pizza1.jpg" class="d-block w-100 rounded-4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/pizza2.png" class="d-block w-100 rounded-4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/pizza3.jpg" class="d-block w-100 rounded-4">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const carosello = document.querySelector('.carosello');
+            const caroselloPosition = carosello.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            // Se il carosello è visibile (entro la finestra di visualizzazione)
+            if (caroselloPosition < windowHeight) {
+                carosello.classList.add('visibile');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
