@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Aileron';
+  src: url('fonts/Aileron-Regular.woff2') format('woff2'),
+       url('fonts/Aileron-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('fonts/Aileron-Bold.woff2') format('woff2'),
+       url('fonts/Aileron-Bold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body{
+    background-color: black;
+    font-family: Aileron, sans-serif;
+}
+
+.mezza-oro{
+    background: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    #BF8C4E 50%,
+    #BF8C4E 100%
+  );
+}
+
+.pazzi{
+    width: auto;
+    height: 55vw;
+}
+
+/* Scritta Nascosta */
+.scritta-nascosta {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.scritta-nascosta.visibile {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img-colonna {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ritaglia per riempire */
+    display: block;
+}
+
+/* Animazioni */
+@keyframes slideIn {
+    to { left: 0; }
+}
+
+@keyframes slideFromRight {
+    to { right: 0; }
+}
+
+/* Slide in / Slide right */
+.slide-in {
+    position: relative;
+    left: -100%;
+    animation: slideIn 0.9s ease-out forwards;
+}
+
+.slide-right {
+    position: relative;
+    right: -100%;
+    animation: slideFromRight 1.0s ease-out forwards;
+}
+
+.condimento{
+  width: 400px;      /* o qualunque dimensione tu voglia */
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.text-on-gold{
+  position: relative;
+  top: 45%;
+}
+
+@media (max-width: 575.98px) {
+  .img-xs {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media(min-width: 768px){
+    .text-on-gold{
+      font-size: 1.35rem;
+      position: relative;
+      top: 38%;
+    }
+    .title-on-gold{
+      font-size: 2rem;
+      position: relative;
+      top: 40%;
+    }
+}
+
+@media(min-width: 992px){
+    .text-on-gold{
+      font-size: 1.8rem;
+      position: relative;
+      top: 50%;
+    }
+    .title-on-gold{
+      font-size: 2.5rem;
+      position: relative;
+      top: 48%;
+    }
+}
+
+@media(min-width: 1200px){
+  .text-on-gold{
+      font-size: 1.8rem;
+      position: relative;
+      top: 60%;
+    }
+    .title-on-gold{
+      font-size: 2.5rem;
+      position: relative;
+      top: 58%;
+    }
+}
+
