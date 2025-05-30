@@ -87,11 +87,35 @@ body{
   top: 45%;
 }
 
+.navbar{
+  background-color: transparent !important;
+}
+
+.offcanvas {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
 @media (max-width: 575.98px) {
   .img-xs {
     width: 400px;
     height: auto;
   }
+
+  .navbar{
+      font-size: large;
+  }
+
+  .offcanvas{
+    --bs-offcanvas-width: 150px;
+  }
+
 }
 
 @media(min-width: 768px){
@@ -105,6 +129,10 @@ body{
       position: relative;
       top: 40%;
     }
+
+    .offcanvas{
+    --bs-offcanvas-width: 150px;
+  }
 }
 
 @media(min-width: 992px){
@@ -117,6 +145,10 @@ body{
       font-size: 2.5rem;
       position: relative;
       top: 48%;
+    }
+
+    .navbar{
+      font-size: large;
     }
 }
 

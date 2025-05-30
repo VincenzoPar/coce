@@ -12,13 +12,37 @@
    <!-- Container principale -->
     <div class="container-fluid">
 
+        <!-- Navigation bar-->
+        <nav class="navbar navbar-expand-lg bg-dark pt-lg-3">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler ps-0 ms-0 pt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-lg-5 me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white text-decoration-underline fw-semibold" aria-current="page" href="menu.html">Menù</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white text-decoration-underline fw-semibold" aria-current="page" href="#">Chi Siamo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white text-decoration-underline fw-semibold" aria-current="page" href="#mappa">Dove Siamo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <!-- Intestazione e titoli-->
         <div class="row mt-3 mb-5 scritta-nascosta">
             <div class="col-md-6">
                 <div class="row">
                     <img 
                         src="img/LOGO COCE COMPLETO.svg"
-                        class="img-fluid w-50 h-auto ms-sm-4 mt-4" 
+                        class="img-fluid w-50 h-auto ms-sm-4 mt-lg-4" 
                         alt="coceLogoCompleto">
                 </div>
                 <div class="row mt-5 ms-sm-4">
@@ -81,7 +105,8 @@
                 <h3 class= "mb-3 me-3 ps-5 pe-5 ps-sm-2 pe-sm-2 text-center" style="color: white;">
                     Freschezza di stagione, sapori indimenticabili. Il nostro menù si rinnova periodicamente per darti sempre il meglio.
                 </h3>
-                <a href="prenota.html" class="text-center" style="color: #BF8C4E;">
+                <a href="menu.html
+                " class="text-center" style="color: #BF8C4E;">
                     Vai al menù    
                 </a>
             </div>
@@ -128,7 +153,7 @@
                     alt="coceLogoCompleto">
             </div>
             <div class="col-12 col-sm-6">
-                <div class="col d-block p-4">
+                <div class="col d-block p-4" id="mappa">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6003.015527298126!2d14.404526091118754!3d41.21070398529088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a5bb37533aed1%3A0x762543cf7af84e43!2s81010%20Ruviano%20CE!5e0!3m2!1sit!2sit!4v1746277938278!5m2!1sit!2sit"
                         width="100%" 

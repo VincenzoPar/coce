@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menù</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styleMenu.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="display-1 fw-bold text-white mt-3 p-md-5 text-center">Il nostro Menù</div>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center ms-md-auto d-block">
+        <img 
+            src="img/logo.jpg" 
+            class="coce" 
+            alt="pizzaLogo">
+      </div>
+    </div>
+    <div class="row">
+      <!-- Sidebar (visibile su desktop) -->
+      <div class="col-md-3 d-none d-md-block sidebar pt-5">
+        <div class="menu-buttons">
+          <button class="btn-menu active" data-title="I FRITTI" data-image="img/menu/fritti.png">I FRITTI</button>
+          <button class="btn-menu" data-title="I TAGLIERI" data-image="img/menu/taglieri.png">TAGLIERI</button>
+          <button class="btn-menu" data-title="LE TRADIZIONALI" data-image="img/menu/tradizionali.png">LE TRADIZIONALI</button>
+          <button class="btn-menu" data-title="I DOLCI" data-image="img/menu/dolci.png">DOLCI</button>
+          <button class="btn-menu" data-title="LE BIRRE" data-image="img/menu/birre.png">BIRRE</button>
+          <button class="btn-menu" data-title="I VINI" data-image="img/menu/vini.png">CARTA DEI VINI</button>
+        </div>
+      </div>
+
+      <!-- Contenuto -->
+      <div class="col-md-9 col-12">
+        <!-- Accordion (solo su mobile) -->
+        <div class="accordion d-md-none" id="menuAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFritti" aria-expanded="true" aria-controls="collapseFritti">
+                I FRITTI
+              </button>
+            </h2>
+            <div id="collapseFritti" class="accordion-collapse collapse show" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/fritti.png"  
+                  alt="menuFritti">
+              </div>
+            </div>
+          </div>
+          <!--- Secondo item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTaglieri" aria-expanded="false" aria-controls="collapseTaglieri">
+                TAGLIERI
+              </button>
+            </h2>
+            <div id="collapseTaglieri" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/taglieri.png"  
+                  alt="menuTaglieri">
+              </div>
+            </div>
+          </div>
+          <!-- Terzo item... -->
+           <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTradizionali" aria-expanded="false" aria-controls="collapseTradizionali">
+                LE TRADIZIONALI
+              </button>
+            </h2>
+            <div id="collapseTradizionali" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/tradizionali.png"  
+                  alt="menuTradizionali">
+              </div>
+            </div>
+          </div>
+          <!-- Quarto item... -->
+           <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDolci" aria-expanded="false" aria-controls="collapseDolci">
+                I DOLCI
+              </button>
+            </h2>
+            <div id="collapseDolci" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/dolci.png"  
+                  alt="menuDolci">
+              </div>
+            </div>
+          </div>
+          <!-- Quinto item... -->
+           <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBirre" aria-expanded="false" aria-controls="collapseBirre">
+                LE BIRRE
+              </button>
+            </h2>
+            <div id="collapseBirre" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/birre.png"  
+                  alt="menuBirre">
+              </div>
+            </div>
+          </div>
+          <!-- Sesto item... -->
+           <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVini" aria-expanded="false" aria-controls="collapseVini">
+                CARTA DEI VINI
+              </button>
+            </h2>
+            <div id="collapseVini" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/vini.png"  
+                  alt="menuVini">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sezioni menù (desktop) -->
+        <div id="show-section" class="menu-section d-none d-md-block">
+          <h2 id="menu-title"></h2>
+          <img 
+            id="menu-image"
+            src="img/menu/fritti.png"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scriptMenu.js"></script>
+</body>
+</html>
