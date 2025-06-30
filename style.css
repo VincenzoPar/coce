@@ -29,11 +29,6 @@ body{
   );
 }
 
-.pazzi{
-    width: auto;
-    height: 55vw;
-}
-
 /* Scritta Nascosta */
 .scritta-nascosta {
     opacity: 0;
@@ -103,11 +98,6 @@ body{
 
 
 @media (max-width: 575.98px) {
-  .img-xs {
-    width: 90%;
-    height: auto;
-  }
-
   .navbar{
       font-size: large;
   }
@@ -119,10 +109,6 @@ body{
 }
 
 @media(min-width: 768px){
-    .img-xs{
-      width: 100%;
-      height: auto;
-    }
     .offcanvas{
     --bs-offcanvas-width: 150px;
   }
