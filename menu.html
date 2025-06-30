@@ -11,6 +11,7 @@
 </head>
 <body>
   <div class="container-fluid">
+
     <div class="row">
       <div class="col-md-9">
         <div class="display-1 fw-bold text-white mt-3 p-md-5 text-center">Il nostro Menù</div>
@@ -26,12 +27,14 @@
       <!-- Sidebar (visibile su desktop) -->
       <div class="col-md-3 d-none d-md-block sidebar pt-5">
         <div class="menu-buttons">
-          <button class="btn-menu active" data-title="I FRITTI" data-image="img/menu/fritti.png">I FRITTI</button>
-          <button class="btn-menu" data-title="I TAGLIERI" data-image="img/menu/taglieri.png">TAGLIERI</button>
-          <button class="btn-menu" data-title="LE TRADIZIONALI" data-image="img/menu/tradizionali.png">LE TRADIZIONALI</button>
-          <button class="btn-menu" data-title="I DOLCI" data-image="img/menu/dolci.png">DOLCI</button>
-          <button class="btn-menu" data-title="LE BIRRE" data-image="img/menu/birre.png">BIRRE</button>
-          <button class="btn-menu" data-title="I VINI" data-image="img/menu/vini.png">CARTA DEI VINI</button>
+          <button class="btn-menu active" data-title="PER INIZIARE" data-image="img/menu/perIniziare.jpg">PER INIZIARE</button>
+          <button class="btn-menu" data-title="LE TRADIZIONALI" data-image="img/menu/leTradizionali.jpg">LE TRADIZIONALI</button>
+          <button class="btn-menu" data-title="LE STAGIONALI" data-image="img/menu/leStagionali.jpg">LE STAGIONALI</button>
+          <button class="btn-menu" data-title="LE PIZZE A GIRO" data-image="img/menu/pizzaAGiro.jpg">LE PIZZE A GIRO</button>
+          <button class="btn-menu" data-title="I DOLCI" data-image="img/menu/dolci.jpg">I DOLCI</button>
+          <button class="btn-menu" data-title="VINI E BOLLICINE" data-image="img/menu/vini.jpg">VINI E BOLLICINE</button>
+          <button class="btn-menu" data-title="BIBITE E LIQUORI" data-image="img/menu/bibiteELiquori.jpg">BIBITE E LIQUORI</button>
+          <button class="btn-menu" data-title="LISTA ALLERGENI" data-image="img/menu/allergeni.jpg">LISTA ALLERGENI</button>
         </div>
       </div>
 
@@ -41,52 +44,68 @@
         <div class="accordion d-md-none" id="menuAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFritti" aria-expanded="true" aria-controls="collapseFritti">
-                I FRITTI
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePerIniziare" aria-expanded="true" aria-controls="collapsePerIniziare">
+                PER INIZIARE
               </button>
             </h2>
-            <div id="collapseFritti" class="accordion-collapse collapse show" data-bs-parent="#menuAccordion">
+            <div id="collapsePerIniziare" class="accordion-collapse collapse show" data-bs-parent="#menuAccordion">
               <div class="accordion-body">
                 <img 
                   class="w-100 h-auto"
-                  src="img/menu/fritti.png"  
-                  alt="menuFritti">
+                  src="img/menu/perIniziare.jpg"  
+                  alt="menuPerIniziare">
               </div>
             </div>
           </div>
           <!--- Secondo item -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTaglieri" aria-expanded="false" aria-controls="collapseTaglieri">
-                TAGLIERI
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeTradizionali" aria-expanded="false" aria-controls="collapseLeTradizionali">
+                LE TRADIZIONALI
               </button>
             </h2>
-            <div id="collapseTaglieri" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+            <div id="collapseLeTradizionali" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
               <div class="accordion-body">
                 <img 
                   class="w-100 h-auto"
-                  src="img/menu/taglieri.png"  
-                  alt="menuTaglieri">
+                  src="img/menu/leTradizionali.jpg"  
+                  alt="menuLeTradizionali">
               </div>
             </div>
           </div>
           <!-- Terzo item... -->
            <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTradizionali" aria-expanded="false" aria-controls="collapseTradizionali">
-                LE TRADIZIONALI
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeStagionali" aria-expanded="false" aria-controls="collapseLeStagionali">
+                LE STAGIONALI
               </button>
             </h2>
-            <div id="collapseTradizionali" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+            <div id="collapseLeStagionali" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
               <div class="accordion-body">
                 <img 
                   class="w-100 h-auto"
-                  src="img/menu/tradizionali.png"  
-                  alt="menuTradizionali">
+                  src="img/menu/leStagionali.jpg"  
+                  alt="menuLeStagionali">
               </div>
             </div>
           </div>
           <!-- Quarto item... -->
+           <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLePizzeAGiro" aria-expanded="false" aria-controls="collapseLePizzeAGiro">
+                LE PIZZE A GIRO
+              </button>
+            </h2>
+            <div id="collapseLePizzeAGiro" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/pizzaAGiro.jpg"  
+                  alt="menuLePizzeAGiro">
+              </div>
+            </div>
+          </div>
+          <!-- Quinto item... -->
            <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDolci" aria-expanded="false" aria-controls="collapseDolci">
@@ -97,24 +116,8 @@
               <div class="accordion-body">
                 <img 
                   class="w-100 h-auto"
-                  src="img/menu/dolci.png"  
+                  src="img/menu/dolci.jpg"  
                   alt="menuDolci">
-              </div>
-            </div>
-          </div>
-          <!-- Quinto item... -->
-           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBirre" aria-expanded="false" aria-controls="collapseBirre">
-                LE BIRRE
-              </button>
-            </h2>
-            <div id="collapseBirre" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
-              <div class="accordion-body">
-                <img 
-                  class="w-100 h-auto"
-                  src="img/menu/birre.png"  
-                  alt="menuBirre">
               </div>
             </div>
           </div>
@@ -122,15 +125,49 @@
            <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVini" aria-expanded="false" aria-controls="collapseVini">
-                CARTA DEI VINI
+                VINI E BOLLICINE
               </button>
             </h2>
             <div id="collapseVini" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
               <div class="accordion-body">
                 <img 
                   class="w-100 h-auto"
-                  src="img/menu/vini.png"  
+                  src="img/menu/vini.jpg"  
                   alt="menuVini">
+              </div>
+            </div>
+          </div>
+          <!-- bibite e liquori-->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBibite" aria-expanded="false" aria-controls="collapseBibite">
+                BIBITE E LIQUORI
+              </button>
+            </h2>
+            <div id="collapseBibite" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/bibiteELiquori.jpg"  
+                  alt="menuBibite">
+              </div>
+            </div>
+          </div>
+
+          <!-- Lista allergeni-->
+          <!-- bibite e liquori-->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAllergeni" aria-expanded="false" aria-controls="collapseAllergeni">
+                LISTA DEGLI ALLERGENI
+              </button>
+            </h2>
+            <div id="collapseAllergeni" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+              <div class="accordion-body">
+                <img 
+                  class="w-100 h-auto"
+                  src="img/menu/allergeni.jpg"  
+                  alt="menuAllergeni">
               </div>
             </div>
           </div>
@@ -141,7 +178,7 @@
           <h2 id="menu-title"></h2>
           <img 
             id="menu-image"
-            src="img/menu/fritti.png"
+            src="img/menu/perIniziare.jpg"
           >
         </div>
       </div>

@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Seleziona tutti i bottoni
     const buttons = document.querySelectorAll(".btn-menu");
 
-    document.getElementById('menu-title').textContent = "I FRITTI";
-    document.getElementById('menu-image').src = "img/menu/fritti.png"
+    document.getElementById('menu-title').textContent = "PER INIZIARE";
+    document.getElementById('menu-image').src = "img/menu/perIniziare.jpg"
 
     buttons.forEach(button => {
       button.addEventListener("click", function() {

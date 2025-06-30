@@ -76,8 +76,8 @@ body{
 }
 
 .condimento{
-  width: 400px;      /* o qualunque dimensione tu voglia */
-  height: 400px;
+  width: 500px;      /* o qualunque dimensione tu voglia */
+  height: 500px;
   object-fit: cover;
 }
 
@@ -104,7 +104,7 @@ body{
 
 @media (max-width: 575.98px) {
   .img-xs {
-    width: 400px;
+    width: 500px;
     height: auto;
   }
 
